@@ -1,0 +1,7 @@
+- hosts: elk 
+  sudo: yes
+  roles:
+    - role: elk
+  vars:
+    elk_elasticsearch.version: 1.5.2
+    elk_logstash.version: 1.5.0-1
